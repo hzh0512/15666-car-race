@@ -1,8 +1,8 @@
-# (TODO: your game's title)
+# Car Race
 
-Author: (TODO: your name)
+Author: Zihao He
 
-Design: (TODO: In two sentences or fewer, describe what is new and interesting about your game.)
+Design: Choose your answer through the menu, and finish the race in the first place!
 
 Screen Shot:
 
@@ -10,14 +10,14 @@ Screen Shot:
 
 How To Play:
 
-(TODO: describe the controls and (if needed) goals/strategy.)
+Move your choice by arrow keys and press ENTER to choose your answer. Press any key to exit when there's a winner.
 
 Art Sources:
 
-(TODO: fill in information about the sources of any artwork you used in the game that you did not draw.)
+The cars and flag resources came from [pngfind](https://www.pngfind.com/). The links are as follows.
+
+[Red car](https://www.pngfind.com/mpng/bJJJhb_emoji-car-auto-automobile-vechicle-bus-red-redcar/), 
+[Yellow car](https://www.pngfind.com/mpng/hoxoJxR_car-bus-auto-show-volkswagen-beetle-compact-car/), 
+[Red flag](https://www.pngfind.com/mpng/ioRRbw_red-flag-triangle-pennon-banner-red-triangle-flag/)
 
 This game was built with [NEST](NEST.md).
-
-https://www.pngfind.com/mpng/bJJJhb_emoji-car-auto-automobile-vechicle-bus-red-redcar/
-https://www.pngfind.com/mpng/hoxoJxR_car-bus-auto-show-volkswagen-beetle-compact-car/
-https://www.pngfind.com/mpng/ioRRbw_red-flag-triangle-pennon-banner-red-triangle-flag/
