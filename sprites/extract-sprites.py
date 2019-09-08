@@ -236,7 +236,7 @@ for sprite in sprites:
 			(gimp-image-delete image)
 		)
 	"""
-	if os.name == "nt" and len(scripts + script) > 30000:
+	if len(scripts + script) > 30000:
 		run_scripts();
 	
 	scripts += script

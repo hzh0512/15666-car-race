@@ -8,8 +8,8 @@ else
 endif
 
 
-../dist/the-planet.png ../dist/the-planet.atlas : the-planet.xcf the-planet.list trade.xcf trade-font.list extract-sprites.py pack-sprites
-	rm -rf the-planet
-	./extract-sprites.py the-planet.list the-planet --gimp='$(GIMP)'
-	./extract-sprites.py trade-font.list the-planet --gimp='$(GIMP)'
-	./pack-sprites ../dist/the-planet the-planet/*
+../dist/car-race.png ../dist/car-race.atlas : car.xcf car.list trade.xcf trade-font.list extract-sprites.py pack-sprites
+	rm -rf car-race
+	./extract-sprites.py car.list car-race --gimp='$(GIMP)'
+	./extract-sprites.py trade-font.list car-race --gimp='$(GIMP)'
+	./pack-sprites ../dist/car-race car-race/*

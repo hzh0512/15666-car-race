@@ -1,12 +1,12 @@
 objs/
 dist/README-SDL.txt
 dist/SDL2.dll
-dist/the-planet
-dist/the-planet.exe
-dist/the-planet.ilk
-dist/the-planet.pdb
+dist/car-race
+dist/car-race.exe
+dist/car-race.ilk
+dist/car-race.pdb
 sprites/pack-sprites
 sprites/pack-sprites.exe
 sprites/pack-sprites.ilk
 sprites/pack-sprites.pdb
-sprites/the-planet/
+sprites/car-race/

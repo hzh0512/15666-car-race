@@ -17,3 +17,7 @@ Art Sources:
 (TODO: fill in information about the sources of any artwork you used in the game that you did not draw.)
 
 This game was built with [NEST](NEST.md).
+
+https://www.pngfind.com/mpng/bJJJhb_emoji-car-auto-automobile-vechicle-bus-red-redcar/
+https://www.pngfind.com/mpng/hoxoJxR_car-bus-auto-show-volkswagen-beetle-compact-car/
+https://www.pngfind.com/mpng/ioRRbw_red-flag-triangle-pennon-banner-red-triangle-flag/
