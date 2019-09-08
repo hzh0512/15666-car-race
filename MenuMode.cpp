@@ -23,6 +23,12 @@ MenuMode::~MenuMode() {
 }
 
 bool MenuMode::handle_event(SDL_Event const &evt, glm::uvec2 const &window_size) {
+    if (background) {
+        if (background->handle_event(evt, window_size)) {
+            return true;
+        }
+    }
+
 	if (evt.type == SDL_KEYDOWN) {
 		if (evt.key.keysym.sym == SDLK_UP) {
 			//skip non-selectable items:
@@ -49,11 +55,8 @@ bool MenuMode::handle_event(SDL_Event const &evt, glm::uvec2 const &window_size)
 			}
 		}
 	}
-	if (background) {
-		return background->handle_event(evt, window_size);
-	} else {
-		return false;
-	}
+
+    return false;
 }
 
 void MenuMode::update(float elapsed) {
@@ -88,7 +91,7 @@ void MenuMode::draw(glm::uvec2 const &drawable_size) {
 
 		for (auto const &item : items) {
 			bool is_selected = (&item == &items[0] + selected);
-			glm::u8vec4 color = (is_selected ? glm::u8vec4(0xff, 0x00, 0xff, 0xff) : glm::u8vec4(0xff, 0xff, 0xff, 0xff));
+			glm::u8vec4 color = (is_selected ? glm::u8vec4(0xff, 0x00, 0xff, 0xff) : glm::u8vec4(0x00, 0x00, 0x00, 0xff));
 			float left, right;
 			if (!item.sprite) {
 				//draw item.name as text:

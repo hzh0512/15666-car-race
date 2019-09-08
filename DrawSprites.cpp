@@ -146,7 +146,7 @@ void DrawSprites::draw_text(std::string const &name, glm::vec2 const &anchor, fl
 	for (size_t pos = 0; pos < name.size(); pos++){
 		Sprite const &chr = atlas.lookup(name.substr(pos,1));
 		draw(chr, moving_anchor, scale, color);
-		moving_anchor.x += (chr.max_px.x - chr.min_px.x) * scale;
+		moving_anchor.x += (chr.max_px.x - chr.min_px.x + 1) * scale;
 	}
 }
 

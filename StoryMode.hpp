@@ -16,28 +16,11 @@ struct StoryMode : Mode {
 
 	//called to create menu for current scene:
 	void enter_scene();
-
-	//------ story state -------
-	enum {
-		Dunes,
-		Oasis,
-		Hill
-	} location = Dunes;
-	bool have_stone = false;
-	bool added_stone = false;
-	struct {
-		bool first_visit = true;
-		bool wont_leave = false;
-	} dunes;
-	struct {
-		bool first_visit = true;
-		bool took_stone = false;
-	} oasis;
-	struct {
-		bool first_visit = true;
-		bool added_stone = false;
-	} hill;
 	
 	glm::vec2 view_min = glm::vec2(0,0);
 	glm::vec2 view_max = glm::vec2(256, 224);
+
+    unsigned int redcar_index = 0, yellowcar_index = 0, question_index = 0;
+    float redcar_x, yellowcar_x;
+    bool win = false;
 };
